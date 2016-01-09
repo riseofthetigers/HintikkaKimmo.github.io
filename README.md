@@ -1,117 +1,109 @@
-![Build Status](https://travis-ci.org/PanosSakkos/personal-jekyll-theme.svg?branch=master)
-[![Join the chat at https://gitter.im/PanosSakkos/personal-jekyll-theme](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/PanosSakkos/personal-jekyll-theme?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+## Will Jekyll Template
 
-# { Personal } Jekyll Theme
+![Screenshot](screenshot.png)
 
-{ Personal } is a free responsive Jekyll theme, about you :wink:
+This is a simple and minimalist template for Jekyll designed for developers that want to write blog posts but don't want to care about frontend stuff.
 
-You can watch it in action [here](https://panossakkos.github.io/personal-jekyll-theme/)!
+The Theme features:
 
-## What value does { Personal } add
+- Gulp
+- Stylus (Jeet, Rupture, Kouto Swiss)
+- Smoothscroll
+- Live Search
+- Offcanvas Menu
+- SVG icons
+- Very very small and fast!
+- Shell Script to create posts
+- Tags page
+- Series page
+- About Me page
+- Feed RSS
+- Sitemap.xml
+- Color Customization
+- Info Customization
 
-* Fork of [Timeline](https://github.com/kirbyt/timeline-jekyll-theme) (mashup of [Grayscale by Start Bootstrap](https://github.com/IronSummitMedia/startbootstrap-grayscale) and [Agency Jekyll Theme](https://github.com/y7kim/agency-jekyll-theme))
-  * Modern and minimal design
-    * Responsive templates for home page, blog archive and posts. Looks great on mobile, tablet, and desktop devices
-    * Sweet animations
-    * Gracefully degrades in older browsers. Compatible with Internet Explorer 8+ and all modern browsers
-  * Timeline
-    * Tell your story so far with a sleek timeline of dates, pictures and descriptions
-  * White on black text, making the reading experience tireless
-  * Google analytics  
-* Customization and full control of your website and blog through the site config
-* Blogging functionality
-  * Preview of the latest post in the home page
-  * Archive page
-  * Syntax highlighting
-  * Emojis
-  * Gesture navigation in archive and post pages by swiping
-  * #tags
-  * Disqus comments
-  * Bootstrap share buttons
-  * RSS feed
-* Anti-procrastinating 404 page
-* iOS and Android Web App mode
-* Forcing of https protocol
-* Protection from email harvesting
-* Sitemap
-* Travis CI integration with [html-proofer](https://github.com/gjtorikian/html-proofer)
+## Basic Setup
 
-## { Personal } à la JekyllNow
+1. [Install Jekyll](http://jekyllrb.com)
+2. Fork the [Will Jekyll Template](https://github.com/willianjusten/will-jekyll-template/fork)
+3. Clone the repo you just forked.
+4. Edit `_config.yml` to personalize your site.
+5. Check out the sample posts in `_posts` to see examples for assigning categories and tags, and other YAML data.
+6. Read the documentation below for further customization pointers and documentation.
 
-Want to get { Personal } without messing with jekyll installations and terminal commands?
+## Site and User Settings
 
-  1. Fork the personal-jekyll-theme repository
-  2. Rename the forked repository to yourgithubusername.github.io
-  3. Visit https://yourgithubusername.github.io
-  4. Start modifying the \_config.yml and editing your blog's posts from Github's online editor or a third party online editor (i.e. [Prose](https://prose.io/))
+You have to fill some informations on `_config.yml` to customize your site.
 
-## Documentation
+```
+# Site settings
+description: A blog about lorem ipsum dolor sit amet
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://localhost:3000" # the base hostname & protocol for your site 
 
-The theme contains documentation in the form of [blog posts](https://panossakkos.github.io/personal-jekyll-theme/blog/index.html).
+# User settings
+username: Lorem Ipsum
+user_description: Anon Developer at Lorem Ipsum Dolor
+user_title: Anon Developer
+email: anon@anon.com
+twitter_username: lorem_ipsum
+github_username:  lorem_ipsum
+gplus_username:  lorem_ipsum
+disqus_username: lorem_ipsum
+```
 
-## Screenshots
-### Header
-![Intro](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/index.jpg)
-### About
-![About](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/about.jpg)
-### Latest post preview
-![Blog](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/blog.jpg)
-### Timeline
-![Timeline](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/timeline.jpg)
-### Blog Archive
-![Archive](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/archive.jpg)
-### Gesture navigation instructions
-![Instructions](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/swipe.jpg)
-### Post page
-![Post](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/post.jpg)
-### \#Tags
-![Tags](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/tags.jpg)
-### 404
-![404](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/404.jpg)
-### Mobile rendering
-![Web App](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/web-app.jpg)
-### Web App mode
+## Color customization
 
-![iOS](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/ios.jpg)
+All color variables are in `src/styl/variable`. To change the main color, just set the new value at `main` assignment. Another colors are for texts and the code background color.
 
-![Android](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/pinned.jpg)
+## Creating posts
 
-## How to run locally
+You can use the `initpost.sh` to create your new posts. Just follow the command:
 
-First you need to install the dependencies:
+```
+./initpost.sh -c Post Title
+```
 
-````
-./scripts/install
-````
+The new file will be created at `_posts` with this format `date-title.md`.
 
-Then, you can build and serve your website by simply running:
+## Front-matter 
 
-````
-./scripts/serve-production
-````
+When you create a new post, you need to fill the post information in the front-matter, follow this example:
 
-## Wiki
+```
+---
+layout: post
+title: "How to use"
+date: 2015-08-03 03:32:44
+image: '/assets/img/post-image.png'
+description: 'First steps to use this template'
+tags:
+- jekyll 
+- template 
+categories:
+- I love Jekyll
+twitter_text: 'How to install and use this template'
+---
+```
 
-Don't forget to list your { Personal } blog in the [Blogs using { Personal }](https://github.com/PanosSakkos/personal-jekyll-theme/wiki/Blogs-using-%7B-Personal-%7D) wiki page in order to drive some traffic to your website :wink:
+## Running the blog in local
 
-## Integrating bug fixes and features into your old fork
+In order to compile the assets and run Jekyll on local you need to follow those steps:
 
-Have you published your own website by forking { Personal } and now you want to get the latest bug fixes and features from this repo into your website?
-Then check [this](https://github.com/PanosSakkos/personal-jekyll-theme/wiki/Upgrading-your-%7B-Personal-%7D-website-with-our-latest-bug-fixes-and-features) out.
+- Install [NodeJS](https://nodejs.org/)
+- Run `npm install` 
+- Run `gulp`
 
-## OSS used in { Personal }
+## Questions
 
-One of the reasons { Personal } is real is the following OSS projects:
+Having a problem getting something to work or want to know why I setup something in a certain way? Ping me on Twitter [@willian_justen](https://twitter.com/willian_justen) or file a [GitHub Issue](https://github.com/willianjusten/will-jekyll-template/issues/new).
 
-  1. [Grayscale](http://startbootstrap.com/template-overviews/grayscale/)
-  2. [hammer.js](https://hammerjs.github.io/)
-  3. [highlightjs](https://highlightjs.org/)
-  4. [RRSSB](https://github.com/kni-labs/rrssb)
-  5. [Timeline](https://github.com/kirbyt/timeline-jekyll-theme)
-  6. [typed.js](https://github.com/mattboldt/typed.js/)
+## License
 
-## Supporting the repo
+This theme is free and open source software, distributed under the The MIT License. So feel free to use this Jekyll theme on your site without linking back to me or using a disclaimer.
 
-Proposals, pull requests and issues are more than welcome, let's make the web a bit more beautiful and secure :wink:
+If you’d like to give me credit somewhere on your blog or tweet a shout out to [@willian_justen](https://twitter.com/willian_justen), that would be pretty sweet.
 
-In case you want to say thank you by donating Bitcoins to all the contributors, [this](https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi) is our address.
+
+
+

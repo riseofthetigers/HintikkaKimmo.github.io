@@ -1,49 +1,19 @@
-
-<!-- Post Layout Start -->
-
 <!DOCTYPE html>
-<html lang="{{ site.lang }}">
+<html lang="pt-br">
+    {% include head.html %}
+    <body>
+        {% include svg-icons.html %}
+        {% include header-post.html %}
+        <section class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  {% include head.html %}
+            <article role="article" id="scroll" class="post-content" itemprop="articleBody">
+                {{ content }}
+            </article>
 
-  <body>
-
-    {% include navigation.html %}
-
-    <section id="post" class="container content-section text-center">
-      <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-
-          {% include swipe-instructions.html %}
-
-          <h1><strong>{{ page.title }}</strong></h1>
-          <h4><strong>{{ page.date | date_to_string }}</strong>
-            <small> . {{ page.category }} . <a href="{{site.baseurl}}{{page.url }}#disqus_thread">Comments</a>
-            {% for tag in page.tags %}
-              <a href="{{site.baseurl}}/tags/{{tag}}.html">#{{ tag }}</a>
-            {% endfor %}
-            </small>
-          </h4>
-
-          {{ page.content | markdownify }}
-
-          {% include share.html %}
-
-          {% if jekyll.environment == "production" %}
+            {% include share.html %}
+            {% include author.html %}
             {% include comments.html %}
-          {% endif %}
-
-          {% include social-buttons.html %}
-
-        </div>
-      </div>
-    </section>
-
-    {% include footer.html %}
-
-    {% include js.html %}
-
-  </body>
+            {% include footer.html %}
+        </section>
+    </body>
 </html>
-
-<!-- Post Layout End -->
