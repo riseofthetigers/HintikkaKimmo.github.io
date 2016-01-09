@@ -1,6 +1,6 @@
 # Site settings
 description: A blog about lorem ipsum dolor sit amet
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "http://www.kimmohintikka.com/" # the subpath of your site, e.g. /blog/
 url: "http://www.kimmohintikka.com/" # the base hostname & protocol for your site
 
 # User settings
