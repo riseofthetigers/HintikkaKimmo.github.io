@@ -1,12 +1,12 @@
 # Site settings
-description: ALL CRASHING THINGS IN MODERATION ..... My thoughts on web technology, business and days politics
+description: ALL CRASHING THINGS IN MODERATION.... My thoughts on web technology, business and days politics
 baseurl: "http://www.kimmohintikka.com/" # the subpath of your site, e.g. /blog/
 url: "http://www.kimmohintikka.com/" # the base hostname & protocol for your site
 
 # User settings
-username: Kimmo Hintikka
+username: KIMMO HINTIKKA
 user_description: Kimmo Hintikka Web practitioner. Unapologetic communicator. Professional introvert.
-user_title: ALL CRASHING THINGS IN MODERATION....
+user_title: All chrashing things in moderation...
 email: hintikkakimmo@gmail.com
 twitter_username: KimmoHintikka
 github_username: HintikkaKimmo
