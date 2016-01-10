@@ -4,8 +4,8 @@ baseurl: "http://www.kimmohintikka.com/" # the subpath of your site, e.g. /blog/
 url: "http://www.kimmohintikka.com/" # the base hostname & protocol for your site
 
 # User settings
-username: Lorem Ipsum
-user_description: Anon Developer at Lorem Ipsum Dolor
+username: Kimmo Hintkka
+user_description: Kimmo Hintikka Thinker, Tinker and Doer
 user_title: Kimmo Hintikka
 email: hintikkakimmo@gmail.com
 twitter_username: KimmoHintikka
