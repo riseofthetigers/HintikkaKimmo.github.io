@@ -4,14 +4,14 @@ baseurl: "http://www.kimmohintikka.com/" # the subpath of your site, e.g. /blog/
 url: "http://www.kimmohintikka.com/" # the base hostname & protocol for your site
 
 # User settings
-username: Kimmo Hintkka
+username: Kimmo Hintikka
 user_description: Kimmo Hintikka Thinker, Tinker and Doer
-user_title: Kimmo Hintikka
+user_title: Some of my stuff
 email: hintikkakimmo@gmail.com
 twitter_username: KimmoHintikka
-github_username:  HintikkaKimmo
-gplus_username:  lorem_ipsum
-disqus_username: lorem_ipsum
+github_username: HintikkaKimmo
+linkedin_username:  lorem_ipsum
+disqus_username: kimmohintikka
 
 # Build settings
 markdown: kramdown
