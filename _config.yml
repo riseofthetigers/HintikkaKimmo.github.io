@@ -1,16 +1,16 @@
 # Site settings
-description: A blog about lorem ipsum dolor sit amet
+description: ALL CRASHING THINGS IN MODERATION ..... My thoughts on web technology, business and days politics
 baseurl: "http://www.kimmohintikka.com/" # the subpath of your site, e.g. /blog/
 url: "http://www.kimmohintikka.com/" # the base hostname & protocol for your site
 
 # User settings
 username: Kimmo Hintikka
-user_description: Kimmo Hintikka Thinker, Tinker and Doer
-user_title: Some of my stuff
+user_description: Kimmo Hintikka Web practitioner. Unapologetic communicator. Professional introvert.
+user_title: ALL CRASHING THINGS IN MODERATION ..... My thoughts on web technology, business and days politics
 email: hintikkakimmo@gmail.com
 twitter_username: KimmoHintikka
 github_username: HintikkaKimmo
-linkedin_username:  lorem_ipsum
+linkedin_username: kimmohintikka
 disqus_username: kimmohintikka
 
 # Build settings
