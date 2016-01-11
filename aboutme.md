@@ -1,16 +1,14 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: If you want to know
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Kimmo Hintikka. I am born in Finland, but you can usually find in Dublin or somewhere else in Europe.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+I build stuff with Ruby and write here how it all works out for.
 
-What else do you need?
+When I am not writing code or creating solution designs in my day job at IBM SoftLayer, 
+I go running, bouldering or enjoy good pint of beer with friends. 
 
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+Professional enquiries drop me a mail or message trough Linkedin.  
