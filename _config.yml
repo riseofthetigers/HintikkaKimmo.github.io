@@ -61,7 +61,7 @@ url-pretty: "kimmohintikka.com"  # eg. "deanattali.com/beautiful-jekyll"
 # --- Misc --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-# disqus: "kimmohintikka"
+disqus: kimmohintikka
 
 # Fill in your Google Analytics ID to track your website using GA
 # google_analytics: "UA-68676706-1"
@@ -142,6 +142,5 @@ prose:
           element: "checkbox"
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
-  
-# Beautiful Jekyll / Dean Attali
+
 # 2fc73a3a967e97599c9763d05e564189
