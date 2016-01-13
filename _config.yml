@@ -41,8 +41,8 @@ author:
   facebook: HintikkaKimmo  # eg. daattali
   github: HintikkaKimmo    # eg. daattali
   twitter: KimmoHintikka   # eg. daattali
-  linkedin: /in/kimmohintikka  # eg. "pub/dean-attali/8/946/143"
-  stackoverflow: /2335820/kimmohintikka  # eg. "3943160/daattali"
+  linkedin: in/kimmohintikka  # eg. "pub/dean-attali/8/946/143"
+  stackoverflow: 2335820/kimmohintikka  # eg. "3943160/daattali"
  
 # Select which links to show in the footer
 footer-links-active:
